@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JQuery - Loading</title>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link rel="stylesheet" href="Lab06.css">
+  </head>
+  <body>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+          
+          //Don't technically need the variables, however I think it looks cleaner.
+          
+          var content = $("<div id='content'></div>");
+          var navcontainer = $("<div id='navcontainer'></div>");
+          var navbar = $("<nav id='nav'>Home</nav>");
+          var img = $("<img id='navimg' src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png' alt='navimg'>");
+          var img2 = $("<img id='navimg2' src='https://icon-library.com/images/android-3-dot-menu-icon/android-3-dot-menu-icon-3.jpg' alt='navimg2'>");
+          
+          var tophalf = $("<div id='tophalf'></div>");
+          var img3 = $("<img id='navimg3' src='https://www.eguardtech.com/wp-content/uploads/2018/08/Network-Profile.png' alt='navimg3'>");
+          var text = $("<div id='text'></div>");
+          var name = $("<div id=name>Oliver Harrison</div>");
+          var quote = $("<div id='quote'>\"Was it all a lie? Have I done this all, for nothing?\"</div>");
+          var buttoncontainer = $("<div id='buttoncontainer'></div>");
+          var button = $("<img id='button' src='https://www.sophe.org/wp-content/uploads/2016/11/register-button-e1523997884965.png' alt='navimg4'>");
+          
+          
+          var bottomhalf = $("<div id='bottomhalf'></div>");
+          
+          var grid1 = $("<div id='grid1'></div>");
+          var header = $("<div id='header'>yesterday</div>");
+          var gridtext = $("<div id='gridtext'>Questions about whether design is necessary or affordable are quite beside the point.</div>");
+          
+          var symbols = $("<div id='symbols'></div>");
+          var hearticon = $("<img id='heart' src='https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678087-heart-512.png' alt='heart'>");
+          var count = $("<div id='count'>45</div>");
+          var commenticon = $("<img id='comment' src='https://image.flaticon.com/icons/png/512/25/25663.png' alt='comment'>");
+          var count2 = $("<div id='count2'>23</div>");
+          
+          var grid2 = $("<div id='grid2'></div>");
+          var header2 = $("<div id='header2'>2 days ago</div>");
+          var gridtext2 = $("<div id='gridtext2'>Questions about whether design is necessary or affordable are quite beside the point.</div>");
+          
+          var symbols2 = $("<div id='symbols2'></div>");
+          var hearticon2 = $("<img id='heart2' src='https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678087-heart-512.png' alt='heart'>");
+          var count3 = $("<div id='count3'>64</div>");
+          var commenticon2 = $("<img id='comment2' src='https://image.flaticon.com/icons/png/512/25/25663.png' alt='comment'>");
+          var count4 = $("<div id='count4'>41</div>");
+          
+          
+          $("body").append(content);
+          
+          $("#content").append(navcontainer);
+          $("#navcontainer").append(img);
+          $("#navcontainer").append(navbar);
+          $("#nav").css({"background-color": "white", "font-size": "200%", "border-radius": "20%"});
+          $("#navcontainer").append(img2);
+          $("#navcontainer").addClass("navigator");
+          
+          $("#navcontainer").after(tophalf);
+          $("#tophalf").prepend(img3);
+          $("#navimg3").css({"border-radius": "50%"});
+          $("#tophalf").after(text);
+          $("#text").append(name);
+          $("#text").append(quote);
+          $("#text").after(buttoncontainer);
+          $("#buttoncontainer").append(button);
+          
+          $("#content").append(bottomhalf);
+          $("#bottomhalf").append(grid2);
+          $("#grid2").before(grid1);
+          $("#grid1").append(header);
+          $("#grid1").append(gridtext);
+          $("#grid2").append(header2);
+          $("#grid2").append(gridtext2);
+          
+          $("#grid1").append(symbols);
+          $("#symbols").append(hearticon);
+          $("#symbols").append(count);
+          $("#symbols").append(commenticon);
+          $("#symbols").append(count2);
+          
+          $("#grid2").append(symbols2);
+          $("#symbols2").append(hearticon2);
+          $("#symbols2").append(count3);
+          $("#symbols2").append(commenticon2);
+          $("#symbols2").append(count4);
+          
+          
+
+        });
+    </script>
+
+  </body>
+</html>

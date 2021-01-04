@@ -1,0 +1,124 @@
+body{
+  background-image: url("https://www.freecodecamp.org/news/content/images/2020/04/w-qjCHPZbeXCQ-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 110vh;
+}
+#content{
+  width: 95vw;
+  margin: auto;
+}
+#navcontainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+#navimg{
+  width: 50px;
+  height: 40px;
+}
+#navimg2{
+  width: 50px;
+  height: 40px;
+}
+
+
+#tophalf{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navimg3{
+  width: 100px;
+  margin-top: 30px;
+}
+#text{
+  display: grid;
+  justify-content: center;
+}
+#name{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+#quote{
+  display: flex;
+  justify-content: center;
+}
+#buttoncontainer{
+  display: flex;
+  justify-content: center;
+}
+#button{
+  align-content: center;
+  margin: 20px;
+  width: 200px;
+}
+
+#bottomhalf{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1em;
+}
+#grid1{
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  background-color: lightskyblue;
+  height: 200%;
+  display: grid;
+}
+#symbols{
+  display: flex;
+  align-items: center;
+}
+#heart{
+  width: 40px;
+  float: left;
+}
+#comment{
+  width: 40px;
+}
+#grid2{
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+  background-color: lightskyblue;
+  height: 200%;
+  display: grid;
+}
+#symbols2{
+  display: flex;
+  align-items: center;
+}
+#heart2{
+  width: 40px;
+  float: left;
+}
+#comment2{
+  width: 40px;
+}
+
+
+
+@media only screen and (max-width : 600px){
+  #bottomhalf{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 98%;
+    grid-gap: 1em;
+  }
+  #grid1{
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    background-color: lightskyblue;
+    height: 100%;
+  }
+  #grid2{
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    background-color: lightskyblue;
+    height: 100%;
+  }
+}
